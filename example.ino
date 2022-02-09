@@ -21,7 +21,7 @@ String getValue(String *scr, const char* key)
 {
   int firstIndex = scr->indexOf(key);
   int lastIndex = scr->indexOf(",", firstIndex);
-  firstIndex += strlen(par) + 2;
+  firstIndex += strlen(key) + 2;
 
   if (scr->charAt(firstIndex) == '\"') firstIndex++;
   if (scr->charAt(lastIndex - 1) == '\"') lastIndex--;
